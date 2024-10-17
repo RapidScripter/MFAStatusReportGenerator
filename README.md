@@ -39,9 +39,6 @@ This PowerShell script generates a Multi-Factor Authentication (MFA) status repo
    .\MFAStatusReport.ps1
 3. Use the available parameters as needed. For example:
    ```powershell
-   .\MFAStatusReport.ps1 -LicensedUserOnly -AdminOnly
-4. Example
-   ```powershell
    # Example command to generate a report for licensed users with admin roles
    .\MFAStatusReport.ps1 -LicensedUserOnly -AdminOnly
 
@@ -49,5 +46,6 @@ This PowerShell script generates a Multi-Factor Authentication (MFA) status repo
    .\MFAStatusReport.ps1 -SignInAllowed $True
 
 ## Notes
+
 - The generated report includes details such as display name, user principal name, MFA status, activation status, default MFA method, all MFA methods, MFA phone, MFA email, license status, admin roles, and sign-in status.
 - The output file is saved with a timestamp in the specified directory.
